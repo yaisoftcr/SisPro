@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title> El tallercito </title>
+	<!--Elaborado por: YAISOFT-->
+	<!--Fecha de creación:21/06/12 8:40 am-->
+	<!--Ultima modificación: 21/06/12 8:48 am-->	
+	<link rel="stylesheet" type="text/css" href="loginStyle.css" />
+	<script language="javascript">
+            function PonerCursor(){
+                frmDatos.txtID.focus();
+                return true;
+            }
+			
+			function Validar(formulario){
+				var isAdmin = false;
+				if (document.getElementById('login-username').value==""){
+					alert("Debe introducir un nombre de usuario." );
+					document.getElementById('login-username').focus();
+					return false;
+				}else if (document.getElementById('login-password').value==""){
+					alert("Debe introducir una contrasena" );
+					document.getElementById('login-password').focus();
+					return false;
+				}else if ((document.getElementById('login-username').value=="user") && (document.getElementById('login-password').value=="pass")) {
+					isAdmin= false;
+					load("index.html?", isAdmin);
+					return false;
+				}else if ((document.getElementById('login-username').value=="admin") && (document.getElementById('login-password').value=="pass")) {
+					isAdmin = true;
+					load("index.html?", isAdmin);
+					return false;
+				}else if (document.getElementById('login-username').value!="admin" || document.getElementById('login-username').value!="user") {
+					alert("Usuario invalido");
+					return false;
+				}else if (document.getElementById('login-password').value!="pass") {
+					alert("Contrasena invalida");
+					return false;
+				}
+				
+				
+			}
+			
+			function load(url, isAdmin) {
+				window.location=url + isAdmin;
+			}
+			
+			
+       	</script>
+</head>
+
+<body id="login">
+	<div class = "login-wrap">
+		<div id = "headerLogin"></div>
+		<form id ="loginForm" class="generic" method="post">
+			<div id	="user" class="field">
+				<label>Nombre de usuario</label>
+				<input id="login-username" type="text" class="text" name="username" placeholder="Nombre de Usuario" tabindex="1" maxlength="12">
+			</div>
+			
+			<div id="pass" class="field">
+				<label>Contrase&ntilde;a</label>
+				<input id="login-password" type="password" class="text" name="password" placeholder="Contrase&ntilde;a" tabindex="1" maxlength="20">
+			</div>
+			<br><br><br>	
+			<div class="loginButton">
+				<input id="login-submit" type="submit" value="Iniciar sesi&oacute;n" onClick="return Validar(document.getElementById('loginForm'))">
+			</div>
+		</form>
+	</div>		
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+/*Hoja de estilo del Login
+Elaborada por Yaisoft 2012*/
+
+body#login-page {
+min-width: 600px;
+}
+
+body{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+#headerLogin {
+margin:auto;
+padding:auto;
+width:976px;
+height:180px;
+background-color: #FFFFFF;
+background-image:url(images/banerLogin.png);
+background-repeat:no-repeat;
+}
+
+
+.login-wrap {
+background-color:white;
+}
+
+.login-wrap .message {
+text-shadow: 0 1px 0 #EEE;
+color: #222;
+text-align: center;
+width: 600px;
+padding: 15px 0 0;
+margin: 0 auto;
+margin-top: 110px;
+}
+
+.login-wrap h2 {
+font-size: 28px;
+margin: 0;
+}
+
+form#loginForm {
+margin:auto;
+width:500px;
+height:300px;
+text-align:center;
+background:url(images/Login.png);
+background-repeat:no-repeat;
+margin-top: 100px;
+}
+
+form.generic .field {
+margin-bottom: 10px;
+padding-left:50px;
+margin-left: 100px;
+
+}
+
+form.generic label {
+display: block;
+font-weight: bold;
+font-size: 12px;
+color: #212121;
+text-shadow: 0 1px 0 #EEE;
+margin-bottom: 8px;
+margin-right: 170px;
+
+}
+
+form.generic input.text {
+font-size: 14px;
+border-color: #DDD;
+border: 1px solid #BBB;
+border-radius: 5px;
+display: block;
+width: auto;
+border-image: initial;
+}
+
+form input.text {
+padding: 10px;
+margin: 0;
+font: 14px "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+ 
+
+ 
+form.generic #login-submit {
+height: 36px;
+width: 280px;
+padding: 0 0 1px;
+}
+ 
+form.generic a.button, form.generic #login-submit {
+display: block;
+line-height: 34px;
+padding: 0 20px;
+font-size: 12px;
+font-weight: bold;
+font-family: Helvetica, Arial, sans-serif;
+margin-left: 100px;
+background-color: #00A5F0;
+color: white;
+border: 1px solid rgba(0, 0, 0, .2);
+text-shadow: 0 -1px rgba(0, 0, 0, .2);
+text-align: center;
+}
