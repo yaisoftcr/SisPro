@@ -5,47 +5,7 @@
 	<!--Fecha de creación:21/06/12 8:40 am-->
 	<!--Ultima modificación: 21/06/12 8:48 am-->	
 	<link rel="stylesheet" type="text/css" href="loginStyle.css" />
-	<script language="javascript">
-            function PonerCursor(){
-                frmDatos.txtID.focus();
-                return true;
-            }
-			
-			function Validar(formulario){
-				var isAdmin = false;
-				if (document.getElementById('login-username').value==""){
-					alert("Debe introducir un nombre de usuario." );
-					document.getElementById('login-username').focus();
-					return false;
-				}else if (document.getElementById('login-password').value==""){
-					alert("Debe introducir una contrasena" );
-					document.getElementById('login-password').focus();
-					return false;
-				}else if ((document.getElementById('login-username').value=="user") && (document.getElementById('login-password').value=="pass")) {
-					isAdmin= false;
-					load("index.html?", isAdmin);
-					return false;
-				}else if ((document.getElementById('login-username').value=="admin") && (document.getElementById('login-password').value=="pass")) {
-					isAdmin = true;
-					load("index.html?", isAdmin);
-					return false;
-				}else if (document.getElementById('login-username').value!="admin" || document.getElementById('login-username').value!="user") {
-					alert("Usuario invalido");
-					return false;
-				}else if (document.getElementById('login-password').value!="pass") {
-					alert("Contrasena invalida");
-					return false;
-				}
-				
-				
-			}
-			
-			function load(url, isAdmin) {
-				window.location=url + isAdmin;
-			}
-			
-			
-       	</script>
+	<script type="text/javascript" src="scripts/loginValidation.js"></script>
 </head>
 
 <body id="login">

@@ -17,7 +17,7 @@ padding:auto;
 width:976px;
 height:180px;
 background-color: #FFFFFF;
-background-image:url(images/banerLogin.png);
+background-image:url(img/banerLogin.png);
 background-repeat:no-repeat;
 }
 
@@ -46,7 +46,7 @@ margin:auto;
 width:500px;
 height:300px;
 text-align:center;
-background:url(images/Login.png);
+background:url(img/Login.png);
 background-repeat:no-repeat;
 margin-top: 100px;
 }
