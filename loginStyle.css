@@ -40,6 +40,11 @@ font-size: 28px;
 margin: 0;
 }
 
+.loginFormHeader{
+padding-top: 10px;
+margin-bottom: -30px;
+}
+
 form#loginForm {
 margin:auto;
 width:500px;
@@ -47,11 +52,13 @@ height:300px;
 text-align:center;
 background:url(img/Login.png);
 background-repeat:no-repeat;
-margin-top: 100px;
+margin-top: 50px;
+
 }
 
 form.generic .field {
-margin-bottom: 10px;
+padding-top: 50px;
+margin-bottom: -35px;
 padding-left:50px;
 margin-left: 100px;
 
@@ -89,6 +96,7 @@ form.generic #login-submit {
 height: 36px;
 width: 280px;
 padding: 0 0 1px;
+padding-top: 20px;
 }
  
 form.generic a.button, form.generic #login-submit {
@@ -104,4 +112,11 @@ color: white;
 border: 1px solid rgba(0, 0, 0, .2);
 text-shadow: 0 -1px rgba(0, 0, 0, .2);
 text-align: center;
+
+}
+
+
+.footer {
+margin-top: 200px;
+text-align: right;
 }
