@@ -1,0 +1,42 @@
+/*Inicio.css
+Elaborado por Yaisoft */
+
+body{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+#header {
+margin:auto;
+padding-right: 280px;
+width:900px;
+height:180px;
+background-color: #FFFFFF;
+background-image:url(img/baner.png);
+background-repeat:no-repeat;
+}
+
+.content {
+padding: 50px 100px;
+}
+
+.footer {
+padding-top: 100px;
+text-align: right;
+}
+
+#searchwrapper a{
+margin-left: 550px;
+}
+
+
+
+.theTable {
+margin-top: -22px;
+}
+
+
+
+
+
