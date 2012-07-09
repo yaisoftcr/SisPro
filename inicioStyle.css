@@ -30,7 +30,9 @@ text-align: right;
 margin-left: 550px;
 }
 
-
+#searchwrapper h3 {
+display: inline;
+}
 
 .theTable {
 margin-top: -22px;

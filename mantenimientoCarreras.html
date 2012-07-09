@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title> Mantenimiento de carreras </title>
+	<link rel="stylesheet"	type="text/css" href="inicioStyle.css"/>
+	<link rel="stylesheet"	type="text/css" href="css/bootstrap.css"/>
+	
+	<script type="text/javascript" src="scripts/filterTable.js"></script>
+	<script type="text/javascript" src="scripts/sorttable.js"></script>
+	
+</head>
+
+<body id = "wrap">
+
+	<div class="navbar">
+    	<div class="navbar-inner">
+	    	<div class="container">
+		    	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	</a>
+			    	<a class="brand" href="#">Sistema de Administraci&oacute;n de Prospectos</a>
+			    	<div class="nav-collapse">
+				    	<ul class="nav">
+				    	</ul>
+				    	<ul class="nav pull-right">
+					    	<li><a href="#">Mantenimiento</a></li>
+					    	<li><a href="#">Ayuda</a></li>
+					    	<li class="divider-vertical"></li>
+					    	<li><a href="#">Cerrar sesi&oacute;n jpmedrano</a></li>
+					    </ul>	    
+				    </div><!-- /.nav-collapse -->
+	    	</div>
+	    </div><!-- /navbar-inner -->
+  </div><!-- /navbar -->
+
+  				 
+  <div id = "header"> </div>
+  
+  <div class = "content">
+  	<div class = "options">
+  		<div id="searchwrapper">
+  			<form class="well form-search">
+		 		<input type="search" class="span3" placeholder="B&uacute;squeda" name="Buscar" id="sf_filter" onkeyup="filterTable(this, 'sf_filter')" />
+		 		<button type="submit" class="btn">Buscar</button>
+		 		<a class="btn btn-primary" href="#">
+		 			<i class="icon-plus icon-white"></i>
+		 			Agregar nueva carrera
+		 		</a>
+		 	</form>
+		</div>
+		
+  	</div>
+  <div class="theTable">
+  <table id="sf" class="table table-bordered table-striped sortable">
+  	<thead>
+		<tr>
+			<th>Siglas</th>
+			<th>Grado acad&eacute;mico</th>
+			<th>Nombre</th>
+			<th>Aprobada por Conesup</th>
+			<th>    </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1234</td>
+			<td>T&eacute;cnico</td>
+			<td>Desarrollo de Software</td>
+			<td>No</td>
+			<td>Ver</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Diplomado</td>
+			<td>Desarrollo de Software</td>
+			<td>No</td>
+			<td>Ver</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Bachillerato</td>
+			<td>Ingenier&iacute;a en Desarrollo de Software</td>
+			<td>Si</td>
+			<td>Ver</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>T&eacute;cnico</td>
+			<td>Telem&aacute;tica</td>
+			<td>No</td>
+			<td>Ver</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Diplomado</td>
+			<td>Telem&aacute;tica</td>
+			<td>No</td>
+			<td>Ver</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Maestr&iacute;a</td>
+			<td>Bases de datos</td>
+			<td>Si</td>
+			<td>Ver</td>
+		</tr>
+	</tbody>
+  </table>
+  </div>
+  </div>
+  
+  <div class = "footer">
+  <hr> <p> Powered by Yaisoft &copy; </p> 
+  </div>
+	
+</body>
+
+
+</html>
