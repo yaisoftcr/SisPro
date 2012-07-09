@@ -13,7 +13,6 @@ padding: 0;
 
 #headerLogin {
 margin:auto;
-padding:auto;
 width:976px;
 height:180px;
 background-color: #FFFFFF;
@@ -76,7 +75,6 @@ border: 1px solid #BBB;
 border-radius: 5px;
 display: block;
 width: auto;
-border-image: initial;
 }
 
 form input.text {
